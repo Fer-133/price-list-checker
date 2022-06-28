@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -17,21 +18,11 @@ public class RestController {
     @Autowired
     SearchUseCase searchUseCase;
 
-
-/*
-    private final SearchUseCase searchUseCase;
-
-    public RestController(SearchUseCase searchUseCase){
-        this.searchUseCase = searchUseCase;
-    }
-
- */
-
-    @GetMapping("/prices/")
+    @GetMapping("/prices")
     public SearchUseCaseResponse searchPrice(
-            @RequestBody String applicationDate,
-            @RequestBody String productId,
-            @RequestBody String brandId){
+            @RequestParam String applicationDate,
+            @RequestParam String productId,
+            @RequestParam String brandId){
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH.mm.ss");
         LocalDateTime dateTime = LocalDateTime.parse(applicationDate, formatter);
