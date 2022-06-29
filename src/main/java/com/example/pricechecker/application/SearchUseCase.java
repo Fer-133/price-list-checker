@@ -28,7 +28,7 @@ public class SearchUseCase {
                 .priority(priceDO.getPriority())
                 .startDate(priceDO.getStartDate().format(dateTimeFormatter))
                 .endDate(priceDO.getEndDate().format(dateTimeFormatter))
-                .finalPrice(String.format(Locale.US, "%,.2f",priceDO.getPrice()))
+                .finalPrice(String.format(Locale.US, "%,.2f",priceDO.getPrice()) + " " + priceDO.getCurrency())
                 .build();
     }
 

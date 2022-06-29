@@ -40,7 +40,7 @@ public class UnitTests {
                 .priority("0")
                 .startDate("2020-06-14-00.00.00")
                 .endDate("2020-12-31-23.59.59")
-                .finalPrice("35.50")
+                .finalPrice("35.50 EUR")
                 .build();
 
         assertEquals(expected, response);
@@ -65,7 +65,7 @@ public class UnitTests {
                 .priority("1")
                 .startDate("2020-06-14-15.00.00")
                 .endDate("2020-06-14-18.30.00")
-                .finalPrice("25.45")
+                .finalPrice("25.45 EUR")
                 .build();
 
         assertEquals(expected, response);
@@ -90,7 +90,7 @@ public class UnitTests {
                 .priority("0")
                 .startDate("2020-06-14-00.00.00")
                 .endDate("2020-12-31-23.59.59")
-                .finalPrice("35.50")
+                .finalPrice("35.50 EUR")
                 .build();
 
         assertEquals(expected, response);
@@ -115,7 +115,7 @@ public class UnitTests {
                 .priority("1")
                 .startDate("2020-06-15-00.00.00")
                 .endDate("2020-06-15-11.00.00")
-                .finalPrice("30.50")
+                .finalPrice("30.50 EUR")
                 .build();
 
         assertEquals(expected, response);
@@ -140,7 +140,7 @@ public class UnitTests {
                 .priority("1")
                 .startDate("2020-06-15-16.00.00")
                 .endDate("2020-12-31-23.59.59")
-                .finalPrice("38.95")
+                .finalPrice("38.95 EUR")
                 .build();
 
         assertEquals(expected, response);

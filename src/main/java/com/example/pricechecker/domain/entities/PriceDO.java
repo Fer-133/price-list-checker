@@ -18,4 +18,8 @@ public class PriceDO {
     private final Double price;
     private final String currency;
 
+    /*public String getFinalPrice() {
+        return this.price + " " + this.currency;
+    }*/
+
 }
